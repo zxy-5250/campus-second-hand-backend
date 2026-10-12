@@ -19,5 +19,10 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+# 文件上传保存目录（相对 backend 项目根目录）
 upload:
   dir: ./upload/
+# JWT配置
+jwt:
+  secret: ${JWT_SECRET:myLocalSecret1234567890abcdefghijklmnopqrstuvwxyz}
+  expiration: 86400000
